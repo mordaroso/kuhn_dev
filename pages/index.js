@@ -110,27 +110,22 @@ export default function Home() {
             <img
               src="/images/fabiokuhn.jpg"
               alt="Fabio Kuhn"
-              objectFit="cover"
-              layout="fill"
+              style={{ objectFit: "cover" }}
               className="rounded-full"
             />
           </div>
           <p className="text-lg text-left pb-2">
-            Hi, I'm Fabio, a passionate full-stack software developer with a
-            wide range of professional experiences and skills. I've been working
-            in the software and digital product industry for more than 15 years.
+            Hi, I'm Fabio, a software developer and technical leader with over
+            20 years of experience across startups, agencies, and large
+            enterprises. My strengths are in full-stack web development (Ruby on
+            Rails, Next.js, PostgreSQL), system architecture, IT security, and
+            technical leadership.
           </p>
           <p className="text-lg text-left">
-            I'm using my skills and talent to have a bigger impact on the world
-            by working on projects in the area of{" "}
-            <a
-              rel="noopener noreferrer nofollow"
-              target="_blank"
-              href="https://www.effectivealtruism.org/"
-            >
-              Effective Altruism
-            </a>
-            .
+            I have a proven track record in building and growing engineering
+            teams, migrating and modernizing legacy systems, and reliably
+            maintaining business-critical platforms. Experienced in collaborating
+            with international, remote teams.
           </p>
         </Section>
         <Section title="Services">
@@ -205,35 +200,31 @@ export default function Home() {
             </p>
 
             <p className="p-2">
-              <span class="font-bold">Back-end development:</span> Ruby on
-              Rails, NodeJS, Java, Redis, Postgresql, MySQL, GraphQL, API
-              design, Caching
+              <span className="font-bold">Languages & Frameworks:</span> Ruby on
+              Rails, JavaScript, Node.js, React, Next.js, GraphQL
             </p>
             <p className="p-2">
-              <span class="font-bold">Front-end development:</span> HTML (Slim,
-              Haml), CSS (SCSS, Bootstrap, TailwindCSS), JavaScript (StimulusJS,
-              NextJS), Git, SEO, accessibility, responsive web design
+              <span className="font-bold">Databases:</span> PostgreSQL, MySQL, Redis
             </p>
             <p className="p-2">
-              <span class="font-bold">Web hosting:</span> Heroku, AWS (S3,
-              Cloudfront, etc), CI process setup, Monitoring, Sendgrid, etc
+              <span className="font-bold">DevOps & Cloud:</span> Heroku, AWS (RDS,
+              S3, CloudFront), CI/CD, Docker
             </p>
             <p className="p-2">
-              <span class="font-bold">Libraries, Frameworks and Tools:</span>{" "}
-              Core Ruby on Rails, Rspec, Cucumber, Git, Sidekiq, and many more
+              <span className="font-bold">Frontend:</span> HTML, CSS (SCSS,
+              TailwindCSS), StimulusJS, Responsive Design
             </p>
             <p className="p-2">
-              <span class="font-bold">Methodologies:</span> ShapeUp, Scrum,
-              Kanban, Scrumban, TDD, BDD, Post-Mortems, Retrospectives
+              <span className="font-bold">IT Security:</span> System architecture,
+              security best practices, data governance, infrastructure planning
             </p>
             <p className="p-2">
-              <span class="font-bold">Project development:</span> ODI and Jobs
-              to be done, Prototyping, User stories, Lean and MVP, Design
-              Sprints, Start-Up and Big enterprise experience
+              <span className="font-bold">Project Management:</span> Shape Up,
+              Scrum, Kanban, OKR planning, roadmap development
             </p>
             <p className="p-2">
-              <span class="font-bold">Team lead:</span> Coaching, Hiring, 1on1s,
-              Performance reviews, Managing a fully remote team
+              <span className="font-bold">Leadership:</span> Remote team management,
+              recruiting, coaching, team building
             </p>
           </div>
         </Section>
@@ -244,19 +235,27 @@ export default function Home() {
           <div className="w-full sm:w-3/4 lg:w-full mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-10 pt-12">
             <Project
               title="Giving Multiplier"
-              img="/images/giving_multiplier.png"
+              img="/images/giving_multiplier.jpg"
               href="https://givingmultiplier.org"
             >
-              {" "}
-              Want to give more effectively but don't want to give up your
-              favorite charity? Evidence based research suggests: do both!
-              Divide your donation between your favorite charity and a highly
-              effective charity recommended by experts.
+              Donation platform built from the ground up in collaboration with
+              Prof. Joshua Greene (Harvard) and Prof. Lucius Caviola
+              (Cambridge). Over 15,000 donations processed with a total volume
+              of $6.2M, of which $4.1M went to highly effective charities.
+            </Project>
+            <Project
+              title="Giving What We Can"
+              img="/images/gwwc_screenshot.jpg"
+              href="https://www.givingwhatwecan.org"
+            >
+              Global community of effective givers. As Director of Technology,
+              led the platform migration, infrastructure separation, and website
+              redesign that supported doubling the community membership.
             </Project>
             <Project
               title="Algrano"
-              img="/images/algrano.png"
-              href="https://www.algrano.com/en"
+              img="/images/algrano.jpg"
+              href="https://www.algrano.com"
             >
               Algrano is a Swiss tech startup that changes the global trade of
               coffee. Using technology, Algrano has set an ambitious goal to
@@ -267,18 +266,12 @@ export default function Home() {
             </Project>
             <Project
               title="local.ch"
-              img="/images/local_ch.png"
+              img="/images/local_ch.jpg"
               href="https://www.local.ch"
             >
               local.ch is the swiss phone directory. Recently they switched
               their entire front-end to Ruby. It is one of the most visited
               websites in Switzerland.
-            </Project>
-            <Project title="Brotseiten" img="/images/brotseiten.jpg">
-              Brotseiten is a iOS App developed by Simplificator AG for the
-              Swiss startup Brotseiten. The App lets readers subscribe to a
-              weekly published edition of short stories by famous Swiss and
-              German authors.
             </Project>
           </div>
         </Section>
@@ -287,59 +280,88 @@ export default function Home() {
           <WorkList className="w-full">
             <Work
               company="kuhn.dev"
-              title="Full-Stack Engineer & Consultant"
+              title="Full-Stack Developer & Consultant"
               date="2021 - now"
               img="images/kuhn.png"
             >
-              Self-employed and working as a contractor on various projects in
-              the field of{" "}
+              Freelance development and technical consulting. Main project:{" "}
               <a
                 rel="noopener noreferrer nofollow"
                 target="_blank"
-                href="https://www.effectivealtruism.org/"
+                href="https://givingmultiplier.org/"
               >
-                Effective Altrusim
+                Giving Multiplier
               </a>
-              . Some clients include
-              <ul className="text-left ml-8 list-disc">
-                <li>
-                  <a
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    href="https://funds.effectivealtruism.org/"
-                  >
-                    EA Funds
-                  </a>
-                </li>
-                <li>
-                  <a
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    href="https://www.givingwhatwecan.org/"
-                  >
-                    Giving What We Can
-                  </a>
-                </li>
-                <li>
-                  <a
-                    rel="noopener noreferrer nofollow"
-                    target="_blank"
-                    href="https://givingmultiplier.org/"
-                  >
-                    Giving Multiplier
-                  </a>
-                </li>
-              </ul>
+              .
               <p className="pt-8 text-left">
-                <span className="font-bold">My Role</span>
-
+                <span className="font-bold">Key Achievements</span>
                 <ul className="ml-8 list-disc">
                   <li>
-                    Full-stack development with RoR, Next.js, GraphQL,
-                    Postgresql
+                    Built Giving Multiplier from the ground up as a solo
+                    developer, in collaboration with Prof. Joshua Greene
+                    (Harvard) and Prof. Lucius Caviola (Cambridge)
                   </li>
-                  <li>Participate in the product development planning</li>
-                  <li>Evaluation and maintenance of technologies</li>
+                  <li>
+                    Processed over 15,000 donations with a total volume of
+                    $6.2M, of which $4.1M went to highly effective charities
+                  </li>
+                  <li>
+                    Additional client:{" "}
+                    <a
+                      rel="noopener noreferrer nofollow"
+                      target="_blank"
+                      href="https://funds.effectivealtruism.org/"
+                    >
+                      EA Funds
+                    </a>{" "}
+                    (technical support and development of the grantmaking
+                    platform)
+                  </li>
+                </ul>
+              </p>
+            </Work>
+            <Work
+              company="Giving What We Can"
+              title="Director of Technology"
+              date="2021 - 2026"
+              img="images/gwwc.png"
+            >
+              Technical leadership of a global non-profit in effective giving.
+              Changed roles three times from Senior Engineer to Director of
+              Technology.
+              <p className="pt-8 text-left">
+                <span className="font-bold">Key Achievements</span>
+                <ul className="ml-8 list-disc">
+                  <li>
+                    Built engineering team from 1 to 3; supported org growth
+                    from 4 to 16 staff with very high team retention
+                  </li>
+                  <li>
+                    Led full technical separation of infrastructure from parent
+                    org (Effective Ventures) — completed without service
+                    interruptions
+                  </li>
+                  <li>
+                    Migrated and consolidated legacy donation platform into a
+                    simplified, maintainable architecture (Next.js, GraphQL,
+                    PostgreSQL)
+                  </li>
+                  <li>
+                    Implemented tipping feature: 300% increase in processed
+                    donation volume
+                  </li>
+                  <li>
+                    Built pledge club system with 100+ new pledges including
+                    dashboard infrastructure
+                  </li>
+                  <li>
+                    Reduced financial reconciliation from six weeks to weekly
+                    cycles
+                  </li>
+                  <li>
+                    Redesigned entire web presence; supported doubling of
+                    community members
+                  </li>
                 </ul>
               </p>
             </Work>
@@ -347,19 +369,31 @@ export default function Home() {
               company="Algrano"
               title="Principal & Lead Engineer"
               date="2014 - 2021"
-              img="images/algrano.jpg"
+              img="images/algrano_logo.jpg"
             >
-              algrano is the first online community of coffee growers and
-              roasters.
+              First technical hire at an international coffee trading platform.
+              Built the entire product and technical infrastructure from scratch.
               <p className="pt-8 text-left">
-                <span className="font-bold">My Role</span>
-
+                <span className="font-bold">Key Achievements</span>
                 <ul className="ml-8 list-disc">
-                  <li>Full-stack development with Ruby on Rails, JavaScript</li>
-                  <li>Participate in the product development planning </li>
-                  <li>Evaluation and maintenance of technologies</li>
-                  <li>Software engineers and teachnical team leader</li>
-                  <li>Support the product team in reaching the objectives</li>
+                  <li>
+                    Sole developer from project start until August 2018; then
+                    built and led a team of 6 (4 engineers, 2 frontend
+                    designers)
+                  </li>
+                  <li>
+                    Built complete trading platform: from the first order (half
+                    container, 4 orders, 2015) to hundreds of containers between
+                    Latin America, Africa, Asia and Europe
+                  </li>
+                  <li>
+                    Full-stack development with Ruby on Rails and JavaScript;
+                    co-shaped product strategy and technical roadmap
+                  </li>
+                  <li>
+                    Evaluated, built and maintained the technology stack over the
+                    entire product lifecycle
+                  </li>
                 </ul>
               </p>
             </Work>
@@ -369,25 +403,20 @@ export default function Home() {
               date="2010 - 2013"
               img="images/simplificator.jpg"
             >
-              Simplificator AG is a Swiss software agency and consultancy
-              located in Zürich.
-              <br />
-              Although it was one of the first full Ruby on Rails company in
-              Switzerland it uses now different technologies to solve client
-              needs in the most optimal way.
+              Software development at a leading Swiss Ruby on Rails agency.
+              Building new projects and contributing to major clients like
+              local.ch (one of the most visited websites in Switzerland).
               <p className="pt-8 text-left">
-                <span className="font-bold">My Role</span>
-
+                <span className="font-bold">Key Achievements</span>
                 <ul className="ml-8 list-disc">
                   <li>
-                    Software Engineering - mainly with Ruby on Rails,
-                    RubyMotion, iOS and JavaScript
+                    Engineering with Ruby on Rails, RubyMotion and JavaScript
+                    for diverse clients (startups, Swisscom/local.ch, myclimate)
                   </li>
-                  <li>Specification and analysis of projects</li>
-                  <li>Evaluation of technologies</li>
-                  <li>Technical consultancy with clients</li>
-                  <li>Testing and quality control</li>
-                  <li>Bridge a fully remote team in a hybrid environment</li>
+                  <li>
+                    Project specification, on-site technical consulting and
+                    quality assurance
+                  </li>
                 </ul>
               </p>
             </Work>
@@ -397,24 +426,11 @@ export default function Home() {
               date="2009 - 2014"
               img="images/whinybyte.jpg"
             >
-              whinybyte was a small startup located in Basel. We built small
-              customized websites for clients, consulted and worked on Ruby on
-              Rails projects in need and developed our own projects like
-              fahrschule.ch.
-              <p className="pt-8 text-left">
-                <span className="font-bold">My Role</span>
-
-                <ul className="ml-8 list-disc">
-                  <li>
-                    Software Engineering - mainly with Ruby on Rails and
-                    JavaScript
-                  </li>
-                  <li>Specification and analysis of projects</li>
-                  <li>Web design, SEO and front-end development</li>
-                  <li>Sales and marketing</li>
-                  <li>Server Management</li>
-                </ul>
-              </p>
+              Co-founder and technical lead of a software startup. Developed and
+              sold three products: middle (CMS), coiff (appointment management
+              for hairdressers) and fahrschule.ch (directory and appointment
+              management). Responsible for engineering, project management,
+              customer support and server management.
             </Work>
             <Work
               company="Coop"
@@ -422,22 +438,9 @@ export default function Home() {
               date="2004 - 2009"
               img="images/coop.jpg"
             >
-              Coop is the second biggest retailer in Switzerland. I started my
-              appreniceship there at age 17 and worked in different fields.
-              First in first level IT support where I learned communication
-              skills, then from building websites with Java up to low-level
-              programming for internal transaction processing with ABAP.
-              <p className="pt-8 text-left">
-                <span className="font-bold">My Role</span>
-
-                <ul className="ml-8 list-disc">
-                  <li>Internal first-level IT-Support</li>
-                  <li>Java web evelopment</li>
-                  <li>Web design for promotional pages</li>
-                  <li>ABAP/SAP development</li>
-                  <li>API and general interface design</li>
-                </ul>
-              </p>
+              IT apprenticeship with technical baccalaureate followed by
+              employment as a software developer. Java web development, ABAP/SAP
+              development, API design and IT support.
             </Work>
           </WorkList>
         </Section>
